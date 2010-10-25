@@ -1,0 +1,13 @@
+<!-- ssh.xml:
+
+     The Bundler/ssh.xml file is used to manage ssh configuration for
+     both servers and clients.
+
+-->
+
+<Bundle name='ssh' xmlns:xi="http://www.w3.org/2001/XInclude">
+	<!--
+	<xi:include href="upstreamssh.xml"/>
+	-->
+	<xi:include href="localssh.xml"/>
+</Bundle>

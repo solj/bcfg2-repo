@@ -1,0 +1,13 @@
+<!-- groups.xml:
+
+     The Metadata/groups.xml file contains Group and Profile
+     definitions. It must exist.
+
+-->
+
+<Groups xmlns:xi="http://www.w3.org/2001/XInclude">
+	<!--
+	<xi:include href="upstreamgroups.xml"/>
+	-->
+	<xi:include href="localgroups.xml"/>
+</Groups>

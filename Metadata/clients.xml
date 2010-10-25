@@ -1,0 +1,14 @@
+<!-- clients.xml:
+
+     The Metadata/clients.xml file contains the mappings of Profile
+     Groups to clients. The file is just a series of <Client /> tags,
+     each of which describe one host.
+
+-->
+
+<Clients xmlns:xi="http://www.w3.org/2001/XInclude">
+	<!--
+	<xi:include href="upstreamclients.xml"/>
+	-->
+	<xi:include href="localclients.xml"/>
+</Clients>

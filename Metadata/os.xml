@@ -1,0 +1,12 @@
+<!-- os.xml:
+
+     The Metadata/os.xml file is included from distros.xml. It contains
+     Group definitions that are not distro-specific.
+
+-->
+<Groups
+  origin='https://svn.mcs.anl.gov/repos/bcfg/trunk/repository/Metadata/bcfg2-os.xml'>
+	<Group name='linux' category='os'>
+		<Bundle name='ssh'/>
+	</Group>
+</Groups>

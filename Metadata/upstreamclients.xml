@@ -1,0 +1,3 @@
+<Clients>
+	<Client profile="basic" pingable="Y" pingtime="0" name="clienthostname"/>
+</Clients>

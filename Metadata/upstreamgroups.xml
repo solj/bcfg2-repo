@@ -1,0 +1,6 @@
+<Groups xmlns:xi="http://www.w3.org/2001/XInclude">
+	<xi:include href="distros.xml"/>
+	<!-- Basic profile -->
+	<Group profile='true' name='basic' category='profiles'>
+	</Group>
+</Groups>

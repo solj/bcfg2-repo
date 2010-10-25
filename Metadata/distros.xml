@@ -1,0 +1,23 @@
+<!-- distros.xml:
+
+     The Metadata/distros.xml file is included from the groups.xml file.
+     It contains Group definitions for distro-specific groups.
+
+-->
+<Groups xmlns:xi="http://www.w3.org/2001/XInclude">
+	<xi:include href="os.xml"/>
+
+	<!-- releases -->
+	<Group name='centos5' category='distros'>
+	</Group>
+	<Group name='gentoo'>
+	</Group>
+	<Group name='lucid' category='distros'>
+	</Group>
+	<Group name='lenny' category='distros'>
+	</Group>
+	<Group name='nexenta' category='distros'>
+		<Group name='solaris'/>
+		<Group name='ubuntu'/>
+	</Group>
+</Groups>
