@@ -5,9 +5,26 @@
 
 -->
 
-<Bundle name='ssh' xmlns:xi="http://www.w3.org/2001/XInclude">
-	<!--
-	<xi:include href="upstreamssh.xml"/>
-	-->
-	<xi:include href="localssh.xml"/>
+<Bundle name='ssh'>
+<!-- ######### Upstream ssh bundle ######### -->
+<!--
+	<Group name='linux'>
+		<Path name="/etc/ssh_config"/>
+		<Path name="/etc/sshd_config"/>
+-->
+		<!-- Entries handled by SSHbase -->
+<!--
+		<Path name="/etc/ssh/ssh_host_dsa_key"/>
+		<Path name="/etc/ssh/ssh_host_rsa_key"/>
+		<Path name="/etc/ssh/ssh_host_dsa_key.pub"/>
+		<Path name="/etc/ssh/ssh_host_rsa_key.pub"/>
+		<Path name="/etc/ssh/ssh_host_key"/>
+		<Path name="/etc/ssh/ssh_host_key.pub"/>
+		<Path name="/etc/ssh/ssh_known_hosts"/>
+	</Group>
+	<Group name='deb'>
+		<Package name="openssh-server"/>
+	</Group>
+-->
+<!-- ######### Upstream ssh bundle ######### -->
 </Bundle>
