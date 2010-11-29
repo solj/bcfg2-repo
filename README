@@ -6,3 +6,15 @@ generators and plugins.  Those files may not work in your environment
 without manual configuration.  Others can be obsolete from time to time.
 The only purpose is to give you a entry point for your own
 configuration.
+
+Need help?
+----------
+
+* Homepage:      http://bcfg2.org
+* Wiki:          http://bcfg2.org/wiki/
+* Manual:        http://docs.bcfg2.org/
+* IRC:           #bcfg2 on chat.freenode.net
+* Mailing list:  https://lists.mcs.anl.gov/mailman/listinfo/bcfg-dev
+* Bug tracker:   http://bcfg2.org/report
+
+Bcfg2 samples are licensed under BSD, for more details check COPYING.
