@@ -1,1 +1,8 @@
-Sample Bcfg2 repository
+Bcfg2 - Sample Repository
+-------------------------
+
+The Bcfg2 examples repository contains example files for various Bcfg2
+generators and plugins.  Those files may not work in your environment
+without manual configuration.  Others can be obsolete from time to time.
+The only purpose is to give you a entry point for your own
+configuration.
