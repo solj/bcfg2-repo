@@ -7,6 +7,14 @@ without manual configuration.  Others can be obsolete from time to time.
 The only purpose is to give you a entry point for your own
 configuration.
 
+Want to contribute?
+-------------------
+Do you have a configuration which could be useful for other?  Do you want
+to share your knowledge with the community?  The easiest way to get your
+stuff integrated in the Bcfg2 examples is to fork the git respository and
+to place a pull request.
+For more details check http://trac.mcs.anl.gov/projects/bcfg2/wiki/Bcfg2GitHowto
+
 Need help?
 ----------
 
