@@ -4,8 +4,22 @@ Bcfg2 - Sample Repository
 The Bcfg2 examples repository contains example files for various Bcfg2
 generators and plugins.  Those files may not work in your environment
 without manual configuration.  Others can be obsolete from time to time.
-The only purpose is to give you a entry point for your own
-configuration.
+The only purpose is to give you a entry point for your own configuration.
+
+How to use
+----------
+
+1. Browse the examples online.
+Just visit https://github.com/solj/bcfg2-repo and see what's inside the
+example repository.
+
+2. Browse the examples offline.
+If git is installed on your system then you can clone the examples
+repository to your local harddrive. 
+
+git clone https://github.com/solj/bcfg2-repo.git
+
+Use -B if you want all branches.
 
 Want to contribute?
 -------------------
@@ -13,7 +27,7 @@ Do you have a configuration which could be useful for other?  Do you want
 to share your knowledge with the community?  The easiest way to get your
 stuff integrated in the Bcfg2 examples is to fork the git respository and
 to place a pull request.
-For more details check http://trac.mcs.anl.gov/projects/bcfg2/wiki/Bcfg2GitHowto
+For more details check http://bcfg2.org/wiki/Bcfg2GitHowto
 
 Need help?
 ----------
