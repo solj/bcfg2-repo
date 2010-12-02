@@ -1,5 +1,6 @@
 #!/bin/sh
 #
-# PROBE_NAME : current-kernel
-echo `uname -r`
+# Details: http://docs.bcfg2.org/server/plugins/probes/current-kernel.html
+#
 
+echo `uname -r`
