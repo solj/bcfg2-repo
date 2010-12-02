@@ -1,7 +1,7 @@
 Bcfg2 - Sample Repository
 -------------------------
 
-The Bcfg2 examples repository contains example files for various Bcfg2
+The Bcfg2 sample repository contains example files for various Bcfg2
 generators and plugins.  Those files may not work in your environment
 without manual configuration.  Others can be obsolete from time to time.
 The only purpose is to give you a entry point for your own configuration.
@@ -9,28 +9,40 @@ The only purpose is to give you a entry point for your own configuration.
 How to use
 ----------
 
-1. Browse the examples online.
+1. Browse the samples online
 Just visit https://github.com/solj/bcfg2-repo and see what's inside the
 example repository.
 
-2. Browse the examples offline.
-If git is installed on your system then you can clone the examples
+2. Browse the samples offline
+If git is installed on your system then you can clone the complet samples
 repository to your local harddrive. 
 
 git clone https://github.com/solj/bcfg2-repo.git
 
-Use -B if you want all branches.
+3. Use the data out of Bcfg2 repository for the beginning
+After running 'bcfg2-admin init' your Bcfg2 respository contains only a 
+few files. Before you proceed with the next step, make a backup of your
+exisiting files in the local Bcfg2 repository (e.g. /var/lib/bcfg2).
 
-Want to contribute?
--------------------
+You can delete the whole directory and pull a copy of all Bcfg2
+sample files.  The operations needs to be run as root.
+
+cd /var/lib/ && rm -rf bcfg2
+git clone https://github.com/solj/bcfg2-repo.git bcfg2
+
+We recommand to put your local Bcfg2 repository under the control of git. 
+For more detail please refer to the following wiki page:
+http://bcfg2.org/wiki/ExampleRepository
+
+Want to contribute
+------------------
 Do you have a configuration which could be useful for other?  Do you want
 to share your knowledge with the community?  The easiest way to get your
-stuff integrated in the Bcfg2 examples is to fork the git respository and
-to place a pull request.
+stuff integrated is to fork the git respository and to place a pull request.
 For more details check http://bcfg2.org/wiki/Bcfg2GitHowto
 
-Need help?
-----------
+Need help
+---------
 
 * Homepage:      http://bcfg2.org
 * Wiki:          http://bcfg2.org/wiki/
