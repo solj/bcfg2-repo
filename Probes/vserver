@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# Details: http://docs.bcfg2.org/server/plugins/probes/vserver.html
+#
+# Test the proc
+TEST=`cat /proc/self/status|grep s_context| cut -d":" -f2|cut -d" " -f 2`
+
+case "$TEST" in
+  "")
+    # Not a vserver kernel
+    echo group:host
+    ;;
+  "0")
+    # Vserver kernel but it is the HOST
+    echo group:host
+    ;;
+  [0-9]*)
+    # Vserver
+    echo group:vserver
+    ;;
+esac
+
