@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# Details: http://docs.bcfg2.org/server/plugins/probes/virtualmachine.html
+#
+# virt-what is needed for this probe.
+
+PATH=/bin:/usr/bin:/sbin:/usr/sbin; export PATH
+
+TEST=`virt-what`
+
+case "$TEST" in
+  "virtualbox")
+    # The guest is running in a virtualbox
+    echo group:virtualbox
+    ;;
+  "xen")
+    # The guest is running as a xen instance
+    echo group:xen
+    ;;
+  *)
+    # Not a virtual machine
+    echo group:non-virtual
+    ;;
+esac
+
