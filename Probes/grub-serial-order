@@ -1,0 +1,33 @@
+#!/bin/sh
+#
+# Details: http://docs.bcfg2.org/server/plugins/probes/grub-serial-order.html
+#
+# We need to modify the order of the --serial line in grub
+# in order to fix silly hardware bugs.  In some cases, having
+# this in the wrong order causes grub to take an inordinate
+# amount of time to do anything before it actually auto-picks
+# the default menu option to boot.
+#
+
+PATH=/bin:/usr/bin:/sbin:/usr/sbin; export PATH
+
+# Let's figure out what product type this is
+os=`uname -s`
+productname="product-no-dmidecode"
+
+if [ $os = "Linux" ] ; then
+    productname=`dmidecode -s system-product-name 2>&1`
+    case $productname in
+    "PowerEdge M600")
+        echo "console serial"
+        ;;
+    *)
+        echo "serial console"
+        ;;
+    esac
+fi
+if [ $os = "SunOS" ] ; then
+   # Bcfg2 server is unhappy with null output from probes
+   echo "console"
+fi
+
