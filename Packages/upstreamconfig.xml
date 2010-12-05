@@ -1,0 +1,91 @@
+<Sources>
+<!--
+Default Ubuntu (lucid) sources
+-->
+	<APTSource>
+		<Group>lucid</Group>
+		<URL>http://archive.ubuntu.com/ubuntu</URL>
+		<Version>lucid</Version>
+		<Component>main</Component>
+		<Component>multiverse</Component>
+		<Component>restricted</Component>
+		<Component>universe</Component>
+		<Arch>amd64</Arch>
+	</APTSource>
+	<APTSource>
+		<Group>lucid</Group>
+		<URL>http://archive.ubuntu.com/ubuntu</URL>
+		<Version>lucid-backports</Version>
+		<Component>main</Component>
+		<Component>multiverse</Component>
+		<Component>restricted</Component>
+		<Component>universe</Component>
+		<Arch>amd64</Arch>
+	</APTSource>
+	<APTSource>
+		<Group>lucid</Group>
+		<URL>http://archive.ubuntu.com/ubuntu</URL>
+		<Version>lucid-updates</Version>
+		<Component>main</Component>
+		<Component>multiverse</Component>
+		<Component>restricted</Component>
+		<Component>universe</Component>
+		<Arch>amd64</Arch>
+	</APTSource>
+	<APTSource>
+		<Group>lucid</Group>
+		<URL>http://security.ubuntu.com/ubuntu</URL>
+		<Version>lucid-security</Version>
+		<Component>main</Component>
+		<Component>multiverse</Component>
+		<Component>restricted</Component>
+		<Component>universe</Component>
+		<Arch>amd64</Arch>
+	</APTSource>
+<!--
+Default Ubuntu (lucid) Partner repository
+-->
+	<APTSource>
+		<Group>lucid</Group>
+		<URL>http://archive.canonical.com/ubuntu</URL>
+		<Version>lucid</Version>
+		<Component>partner</Component>
+		<Arch>amd64</Arch>
+	</APTSource>
+<!--
+Default Debian (Lenny) sources
+-->
+	<APTSource>
+		<Group>lenny</Group>
+		<URL>http://ftp.debian.org/debian</URL>
+		<Version>lenny</Version>
+		<Component>main</Component>
+		<Arch>amd64</Arch>
+	</APTSource>
+	<APTSource>
+		<Group>lenny</Group>
+		<URL>http://security.debian.org</URL>
+		<Version>lenny/updates</Version>
+		<Component>main</Component>
+		<Arch>amd64</Arch>
+	</APTSource>
+	<APTSource>
+		<Group>lenny</Group>
+		<URL>http://volatile.debian.org/debian-volatile</URL>
+		<Version>lenny/volatile</Version>
+		<Component>main</Component>
+		<Arch>amd64</Arch>
+	</APTSource>
+<!--
+Default CentOS 5 sources
+-->
+	<YUMSource>
+		<Group>centos5</Group>
+		<URL>http://mirror.centos.org/centos/</URL>
+		<Version>5</Version>
+		<Component>os</Component>
+		<Component>updates</Component>
+		<Arch>i386</Arch>
+		<Arch>x86_64</Arch>
+	</YUMSource>
+</Sources>
