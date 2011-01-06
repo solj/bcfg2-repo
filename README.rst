@@ -31,12 +31,17 @@ you are using to run the Bcfg2 server).::
     cd /var/lib/ && rm -rf bcfg2
     git clone https://github.com/solj/bcfg2-repo.git bcfg2
 
-We recommend to put your local Bcfg2 repository under the control of git.
-For more detail please refer to the following wiki page:
+Once this has been completed, you will need to create localclients.xml
+and localgroups.xml with the appropriate content (initially, this can be
+simply copied from the upstream files).
+
+We recommend to put your local Bcfg2 repository under some sort of
+version control. For more detail please refer to the following wiki page:
+
 http://bcfg2.org/wiki/ExampleRepository
 
-Want to contribute
-------------------
+Want to contribute?
+-------------------
 
 Do you have a configuration which could be useful for others? Do you
 want to share your knowledge with the community? The easiest way to get
@@ -53,4 +58,4 @@ Need help
 * Mailing list:  https://lists.mcs.anl.gov/mailman/listinfo/bcfg-dev
 * Bug tracker:   http://bcfg2.org/report
 
-Bcfg2 samples are licensed under BSD, for more details check COPYING.
+Bcfg2 samples are BSD-licensed, for more details check COPYING.
