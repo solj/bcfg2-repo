@@ -10,35 +10,40 @@ How to use
 ----------
 
 1. Browse the samples online
-Just visit https://github.com/solj/bcfg2-repo and see what's inside the
-example repository.
+
+   Visit https://github.com/solj/bcfg2-repo and see what's inside the
+   example repository.
 
 2. Browse the samples offline
-If git is installed on your system then you can clone the complete sample
-repository to your local harddrive.::
 
-    git clone https://github.com/solj/bcfg2-repo.git
+   If git is installed on your system then you can clone the complete
+   sample repository to your local harddrive.::
+
+       git clone https://github.com/solj/bcfg2-repo.git
 
 3. Use the data to start your own Bcfg2 repository from the beginning
-After running 'bcfg2-admin init' your Bcfg2 respository contains only a
-few files. Before you proceed with the next step, make a backup of your
-exisiting files in the local Bcfg2 repository (e.g. ``/var/lib/bcfg2``).
 
-You can delete the whole directory and pull a copy of all Bcfg2 sample
-files. This operation needs to be run as root (provided this is the user
-you are using to run the Bcfg2 server).::
+   After running 'bcfg2-admin init' your Bcfg2 respository contains
+   only a few files. Before you proceed with the next step, make
+   a backup of your exisiting files in the local Bcfg2 repository
+   (e.g. ``/var/lib/bcfg2``).
 
-    cd /var/lib/ && rm -rf bcfg2
-    git clone https://github.com/solj/bcfg2-repo.git bcfg2
+   You can delete the whole directory and pull a copy of all Bcfg2 sample
+   files. This operation needs to be run as root (provided this is the
+   user you are using to run the Bcfg2 server).::
 
-Once this has been completed, you will need to create localclients.xml
-and localgroups.xml with the appropriate content (initially, this can be
-simply copied from the upstream files).
+       cd /var/lib/ && rm -rf bcfg2
+       git clone https://github.com/solj/bcfg2-repo.git bcfg2
 
-We recommend to put your local Bcfg2 repository under some sort of
-version control. For more detail please refer to the following wiki page:
+   Once this has been completed, you will need to create localclients.xml
+   and localgroups.xml with the appropriate content. Initially, this
+   can be simply copied from the upstream files and modified to suit
+   your needs.
 
-http://bcfg2.org/wiki/ExampleRepository
+   We recommend to put your local Bcfg2 repository under some sort of
+   version control. For more detail please refer to the following wiki page:
+
+   http://bcfg2.org/wiki/ExampleRepository
 
 Want to contribute?
 -------------------
