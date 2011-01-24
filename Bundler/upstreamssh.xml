@@ -1,19 +1,15 @@
-<!-- ssh.xml:
+<!-- upstreamssh.xml:
 
-     The Bundler/ssh.xml file is used to manage ssh configuration for
-     both servers and clients.
+     The Bundler/upstreamssh.xml file is used to manage ssh configuration
+     for both servers and clients.
 
 -->
 
-<Bundle name='ssh'>
-<!-- ######### Upstream ssh bundle ######### -->
-<!--
+<Bundle name='upstreamssh'>
 	<Group name='linux'>
 		<Path name="/etc/ssh_config"/>
 		<Path name="/etc/sshd_config"/>
--->
 		<!-- Entries handled by SSHbase -->
-<!--
 		<Path name="/etc/ssh/ssh_host_dsa_key"/>
 		<Path name="/etc/ssh/ssh_host_rsa_key"/>
 		<Path name="/etc/ssh/ssh_host_dsa_key.pub"/>
@@ -25,6 +21,7 @@
 	<Group name='deb'>
 		<Package name="openssh-server"/>
 	</Group>
--->
-<!-- ######### Upstream ssh bundle ######### -->
+	<Group name='rpm'>
+		<Package name="openssh-server"/>
+	</Group>
 </Bundle>
