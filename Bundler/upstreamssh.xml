@@ -7,8 +7,6 @@
 
 <Bundle name='upstreamssh'>
 	<Group name='linux'>
-		<Path name="/etc/ssh_config"/>
-		<Path name="/etc/sshd_config"/>
 		<!-- Entries handled by SSHbase -->
 		<Path name="/etc/ssh/ssh_host_dsa_key"/>
 		<Path name="/etc/ssh/ssh_host_rsa_key"/>
@@ -19,9 +17,13 @@
 		<Path name="/etc/ssh/ssh_known_hosts"/>
 	</Group>
 	<Group name='deb'>
+		<Path name="/etc/ssh/ssh_config"/>
+		<Path name="/etc/ssh/sshd_config"/>
 		<Package name="openssh-server"/>
 	</Group>
 	<Group name='rpm'>
+		<Path name="/etc/ssh/ssh_config"/>
+		<Path name="/etc/ssh/sshd_config"/>
 		<Package name="openssh-server"/>
 	</Group>
 </Bundle>
