@@ -7,7 +7,7 @@ if [ -e /etc/release ]; then
 	OUTPUT="$OUTPUT\ngroup:solaris"
 elif [ -e /etc/debian_version ]; then
 	# debian based
-	OUTPUT="$OUTPUT\ngroup:deb"
+	OUTPUT="$OUTPUT\ngroup:deb\ngroup:linux"
 	if [ -e /etc/lsb-release ]; then
 		# variant
 		. /etc/lsb-release
@@ -35,7 +35,7 @@ elif [ -e /etc/debian_version ]; then
 elif [ -e /etc/redhat-release ]; then
 	# redhat based
 	if [ -x /bin/rpm ]; then
-		OUTPUT="${OUTPUT}\ngroup:rpm"
+		OUTPUT="${OUTPUT}\ngroup:rpm\ngroup:linux"
 		OS_GROUP=`/bin/rpm -q --qf "%{NAME}" --whatprovides redhat-release | sed 's/-release.*//' |  tr '[A-Z]' '[a-z]'`
 		REDHAT_VERSION=`/bin/rpm -q --qf "%{VERSION}" --whatprovides redhat-release`
 		case "$OS_GROUP" in
@@ -53,7 +53,7 @@ elif [ -e /etc/redhat-release ]; then
 	fi
 elif [ -e /etc/gentoo-release ]; then
 	# gentoo
-	OUTPUT="$OUTPUT\ngroup:gentoo"
+	OUTPUT="$OUTPUT\ngroup:gentoo\ngroup:linux"
 elif [ -x /usr/sbin/system_profiler ]; then
 	# os x
 	### NOTE: Think about using system_profiler SPSoftwareDataType here
