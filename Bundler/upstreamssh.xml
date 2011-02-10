@@ -12,9 +12,11 @@
 		<Path name="/etc/ssh/ssh_host_rsa_key"/>
 		<Path name="/etc/ssh/ssh_host_dsa_key.pub"/>
 		<Path name="/etc/ssh/ssh_host_rsa_key.pub"/>
+		<Path name="/etc/ssh/ssh_known_hosts"/>
+	</Group>
+	<Group name='ubuntu' negate='true'>
 		<Path name="/etc/ssh/ssh_host_key"/>
 		<Path name="/etc/ssh/ssh_host_key.pub"/>
-		<Path name="/etc/ssh/ssh_known_hosts"/>
 	</Group>
 	<Group name='deb'>
 		<Path name="/etc/ssh/ssh_config"/>
