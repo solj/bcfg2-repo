@@ -1,0 +1,69 @@
+<Bundle name='ubuntu-base-services' version='2.0'>
+        <BoundService name="dns-clean" status="off" type="deb"/>
+        <BoundService name="grub-common" status="on" type="deb"/>
+        <BoundService name="killprocs" status="off" type="deb"/>
+        <BoundService name="landscape-client" status="off" type="deb"/>
+        <BoundService name="networking" status="on" type="deb"/>
+        <BoundService name="ondemand" status="off" type="deb"/>
+        <BoundService name="pppd-dns" status="off" type="deb"/>
+        <BoundService name="rc.local" status="off" type="deb"/>
+        <BoundService name="mountall-reboot" status="off" type="deb"/>
+        <BoundService name="rsync" status="off" type="deb"/>
+        <BoundService name="single" status="off" type="deb"/>
+        <BoundService name="ssh" status="on" type="deb"/>
+        <BoundService name="sudo" status="on" type="deb"/>
+
+        <BoundService name="networking" status="off" type="upstart"/>
+        <BoundService name="ssh" status="off" type="upstart"/>
+        <BoundService name="apport" status="off" type="upstart"/>
+        <BoundService name="atd" status="off" type="upstart"/>
+        <BoundService name="cloud-config" status="off" type="upstart"/>
+        <BoundService name="cloud-init" status="off" type="upstart"/>
+        <BoundService name="cloud-init-local" status="off" type="upstart"/>
+        <BoundService name="cloud-run-user-script" status="off" type="upstart"/>
+        <BoundService name="console-setup" status="off" type="upstart"/>
+        <BoundService name="control-alt-delete" status="off" type="upstart"/>
+        <BoundService name="cron" status="on" type="upstart"/>
+        <BoundService name="dbus" status="off" type="upstart"/>
+        <BoundService name="dmesg" status="off" type="upstart"/>
+        <BoundService name="failsafe-x" status="off" type="upstart"/>
+        <BoundService name="hostname" status="off" type="upstart"/>
+        <BoundService name="hwclock" status="off" type="upstart"/>
+        <BoundService name="hwclock-save" status="off" type="upstart"/>
+        <BoundService name="irqbalance" status="off" type="upstart"/>
+        <BoundService name="module-init-tools" status="off" type="upstart"/>
+        <BoundService name="mountall" status="off" type="upstart"/>
+        <BoundService name="mountall-net" status="off" type="upstart"/>
+        <BoundService name="mountall-reboot" status="off" type="upstart"/>
+        <BoundService name="mountall-shell" status="off" type="upstart"/>
+        <BoundService name="mounted-dev" status="off" type="upstart"/>
+        <BoundService name="mounted-tmp" status="off" type="upstart"/>
+        <BoundService name="mounted-varrun" status="off" type="upstart"/>
+        <BoundService name="network-interface" status="on" type="upstart" parameters="INTERFACE=eth0"/>
+        <BoundService name="network-interface-security" status="on" type="upstart" parameters="JOB=networking"/>
+        <BoundService name="plymouth" status="off" type="upstart"/>
+        <BoundService name="plymouth-log" status="off" type="upstart"/>
+        <BoundService name="plymouth-splash" status="off" type="upstart"/>
+        <BoundService name="plymouth-stop" status="off" type="upstart"/>
+        <BoundService name="procps" status="off" type="upstart"/>
+        <BoundService name="rc" status="off" type="upstart"/>
+        <BoundService name="rc-sysinit" status="off" type="upstart"/>
+        <BoundService name="rcS" status="off" type="upstart"/>
+        <BoundService name="rsyslog" status="off" type="upstart"/>
+        <BoundService name="screen-cleanup" status="off" type="upstart"/>
+        <BoundService name="tty1" status="off" type="upstart"/>
+        <BoundService name="tty2" status="off" type="upstart"/>
+        <BoundService name="tty3" status="off" type="upstart"/>
+        <BoundService name="tty4" status="off" type="upstart"/>
+        <BoundService name="tty5" status="off" type="upstart"/>
+        <BoundService name="tty6" status="off" type="upstart"/>
+        <BoundService name="udev" status="off" type="upstart"/>
+        <BoundService name="udev-finish" status="off" type="upstart"/>
+        <BoundService name="udevmonitor" status="off" type="upstart"/>
+        <BoundService name="udevtrigger" status="off" type="upstart"/>
+        <BoundService name="upstart-udev-bridge" status="on" type="upstart"/>
+        <BoundService name="ufw" status="off" type="upstart"/>
+        <BoundService name="ureadahead-other" status="off" type="upstart"/>
+
+</Bundle>
+

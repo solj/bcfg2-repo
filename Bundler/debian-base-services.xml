@@ -1,0 +1,15 @@
+<Bundle name='debian-base-services' version='2.0'>
+
+<BoundService name="bootlogs" status="off" type="deb"/>
+<BoundService name="cron" status="on" type="deb"/>
+<BoundService name="killprocs" status="off" type="deb"/>
+<BoundService name="rc.local" status="off" type="deb"/>
+<BoundService name="rmnologin" status="off" type="deb"/>
+<BoundService name="rsync" status="off" type="deb"/>
+<BoundService name="rsyslog" status="off" type="deb"/>
+<BoundService name="single" status="off" type="deb"/>
+<BoundService name="ssh" status="on" type="deb"/>
+<BoundService name="stop-bootlogd" status="off" type="deb"/>
+
+</Bundle>
+
