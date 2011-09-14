@@ -27,6 +27,9 @@ elif [ -e /etc/debian_version ]; then
 			5.*)
 			OUTPUT="$OUTPUT\ngroup:lenny"
 			;;
+			6.*)
+			OUTPUT="$OUTPUT\ngroup:squeeze"
+			;;
 			"sid")
 			OUTPUT="$OUTPUT\ngroup:sid"
 			;;
