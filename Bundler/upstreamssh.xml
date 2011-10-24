@@ -9,7 +9,9 @@
 	<Group name='linux'>
 		<!-- Entries handled by SSHbase -->
 		<Path name="/etc/ssh/ssh_host_dsa_key"/>
+		<Path name="/etc/ssh/ssh_host_ecdsa_key"/>
 		<Path name="/etc/ssh/ssh_host_rsa_key"/>
+		<Path name="/etc/ssh/ssh_host_ecdsa_key.pub"/>
 		<Path name="/etc/ssh/ssh_host_dsa_key.pub"/>
 		<Path name="/etc/ssh/ssh_host_rsa_key.pub"/>
 		<Path name="/etc/ssh/ssh_known_hosts"/>
