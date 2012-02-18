@@ -1,0 +1,6 @@
+<Sources xmlns:xi="http://www.w3.org/2001/XInclude">
+	<!--
+	<xi:include href="upstreamsources.xml"/>
+	-->
+	<xi:include href="localsources.xml"/>
+</Sources>

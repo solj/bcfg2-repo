@@ -1,0 +1,70 @@
+<Sources>
+<!--
+Default Ubuntu (lucid) sources
+-->
+<Group name="lucid">
+	<Source type="apt" url="http://archive.ubuntu.com/ubuntu" version="lucid">
+		<Component>main</Component>
+		<Component>multiverse</Component>
+		<Component>restricted</Component>
+		<Component>universe</Component>
+		<Arch>amd64</Arch>
+	</Source>
+	<Source type="apt" url="http://archive.ubuntu.com/ubuntu" version="lucid-backports">
+		<Component>main</Component>
+		<Component>multiverse</Component>
+		<Component>restricted</Component>
+		<Component>universe</Component>
+		<Arch>amd64</Arch>
+	</Source>
+	<Source type="apt" url="http://archive.ubuntu.com/ubuntu" version="lucid-updates">
+		<Component>main</Component>
+		<Component>multiverse</Component>
+		<Component>restricted</Component>
+		<Component>universe</Component>
+		<Arch>amd64</Arch>
+	</Source>
+	<Source type="apt" url="http://security.ubuntu.com/ubuntu" version="lucid-security">
+		<Component>main</Component>
+		<Component>multiverse</Component>
+		<Component>restricted</Component>
+		<Component>universe</Component>
+		<Arch>amd64</Arch>
+	</Source>
+<!--
+Default Ubuntu (lucid) Partner repository
+-->
+	<Source type="apt" url="http://archive.canonical.com/ubuntu" version="lucid">
+		<Component>partner</Component>
+		<Arch>amd64</Arch>
+	</Source>
+</Group>
+<!--
+Default Debian (Lenny) sources
+-->
+<Group name="lenny">
+	<Source type="apt" url="http://ftp.debian.org/debian" version="lenny">
+		<Component>main</Component>
+		<Arch>amd64</Arch>
+	</Source>
+	<Source type="apt" url="http://security.debian.org" version="lenny/updates">
+		<Component>main</Component>
+		<Arch>amd64</Arch>
+	</Source>
+	<Source type="apt" url="http://volatile.debian.org/debian-volatile" version="lenny/volatile">
+		<Component>main</Component>
+		<Arch>amd64</Arch>
+	</Source>
+</Group>
+<!--
+Default CentOS 5 sources
+-->
+<Group name="centos5">
+	<Source type="yum" url="http://mirror.centos.org/centos/" version="5">
+		<Component>os</Component>
+		<Component>updates</Component>
+		<Arch>i386</Arch>
+		<Arch>x86_64</Arch>
+	</Source>
+</Group>
+</Sources>
