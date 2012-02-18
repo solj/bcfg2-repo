@@ -11,14 +11,9 @@ elif [ -e /etc/debian_version ]; then
 	if [ -e /etc/lsb-release ]; then
 		# variant
 		. /etc/lsb-release
-		OS_GROUP=$DISTRIB_CODENAME
 		DEBIAN_VERSION=$(echo "$DISTRIB_ID" | tr '[A-Z]' '[a-z]')
-		case "$OS_GROUP" in
-			"lucid")
-			OUTPUT="$OUTPUT\ngroup:${DISTRIB_CODENAME}"
-			OUTPUT="$OUTPUT\ngroup:${DEBIAN_VERSION}"
-			;;
-		esac
+		OUTPUT="$OUTPUT\ngroup:${DISTRIB_CODENAME}"
+		OUTPUT="$OUTPUT\ngroup:${DEBIAN_VERSION}"
 	else
 		# debian
 		OS_GROUP=`cat /etc/debian_version`
