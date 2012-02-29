@@ -1,5 +1,12 @@
 <Sources xmlns:xi="http://www.w3.org/2001/XInclude">
 	<!--
+	     NOTE: The Packages plugin layout changed in 1.2. This
+		   example has been updated to reflect the new layout.
+		   Configuration examples for older sources can be found at:
+
+		   https://github.com/solj/bcfg2-repo/tree/4d82e89d928f498c5ef5fe257b939504d4faf1e8/Packages
+	-->
+	<!--
 	<xi:include href="upstreamsources.xml"/>
 	-->
 	<xi:include href="localsources.xml"/>
