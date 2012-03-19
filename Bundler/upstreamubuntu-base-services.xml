@@ -11,20 +11,20 @@
         <BoundService name="rsync" status="off" type="deb"/>
         <BoundService name="single" status="off" type="deb"/>
         <BoundService name="ssh" status="on" type="deb"/>
-        <BoundService name="sudo" status="on" type="deb"/>
+        <BoundService name="sudo" status="off" type="deb"/>
+        <BoundService name="cloud-config" status="off" type="deb"/>
+        <BoundService name="cloud-init" status="off" type="deb"/>
+        <BoundService name="cloud-init-local" status="off" type="deb"/>
+        <BoundService name="cloud-run-user-script" status="off" type="deb"/>
+        <BoundService name="dbus" status="off" type="deb"/>
 
         <BoundService name="networking" status="off" type="upstart"/>
         <BoundService name="ssh" status="off" type="upstart"/>
         <BoundService name="apport" status="off" type="upstart"/>
         <BoundService name="atd" status="off" type="upstart"/>
-        <BoundService name="cloud-config" status="off" type="upstart"/>
-        <BoundService name="cloud-init" status="off" type="upstart"/>
-        <BoundService name="cloud-init-local" status="off" type="upstart"/>
-        <BoundService name="cloud-run-user-script" status="off" type="upstart"/>
         <BoundService name="console-setup" status="off" type="upstart"/>
         <BoundService name="control-alt-delete" status="off" type="upstart"/>
         <BoundService name="cron" status="on" type="upstart"/>
-        <BoundService name="dbus" status="off" type="upstart"/>
         <BoundService name="dmesg" status="off" type="upstart"/>
         <BoundService name="failsafe-x" status="off" type="upstart"/>
         <BoundService name="hostname" status="off" type="upstart"/>
@@ -64,6 +64,6 @@
         <BoundService name="upstart-udev-bridge" status="on" type="upstart"/>
         <BoundService name="ufw" status="off" type="upstart"/>
         <BoundService name="ureadahead-other" status="off" type="upstart"/>
-
+        <BoundService name="ureadahead" status="off" type="upstart"/>
 </Bundle>
 
