@@ -25,6 +25,9 @@ elif [ -e /etc/debian_version ]; then
 			6.*)
 			OUTPUT="$OUTPUT\ngroup:squeeze"
 			;;
+			"wheezy/sid")
+			OUTPUT="$OUTPUT\ngroup:wheezy"
+			;;
 			"sid")
 			OUTPUT="$OUTPUT\ngroup:sid"
 			;;
