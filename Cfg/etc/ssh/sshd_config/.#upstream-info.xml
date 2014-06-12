@@ -1,8 +1,8 @@
 <FileInfo>
 	<Group name='linux'>
-		<Info owner='root' group='root' perms='0600'/>
+		<Info owner='root' group='root' mode='0600'/>
 	</Group>
 	<Group name='osx'>
-		<Info owner='root' group='wheel' perms='0600'/>
+		<Info owner='root' group='wheel' mode='0600'/>
 	</Group>
 </FileInfo>
